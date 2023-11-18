@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="gpt-midi.js"></script>
+</head>
+<body>
+  <div id="panel">
+    <div class="whole-row">
+      <gpt-midi id="midi"></gpt-midi>
+    </div>
+    <div class="whole-row header ac">
+      Tempo
+    </div>
+    <div class="ar">
+      notes per beat
+    </div>
+    <div class="al">
+      <select id="notes-per-beat"></select>
+    </div>
+    <div class="ar">
+      average
+    </div>
+    <div class="al"><span id="tempo-bpm">&mdash;</span> bpm</div>
+    <div class="ar">
+      standard deviation
+    </div>
+    <div class="al"><span id="tempo-std-dev">&mdash;</span> ms</div>
+    <div class="ar">
+      greatest deviation
+    </div>
+    <div class="al"><span id="tempo-max-dev">&mdash;</span> ms</div>
+    <div class="whole-row">&nbsp;</div>
+    <div class="whole-row header ac">
+      Key pressure
+    </div>
+    <div class="ar">
+      average
+    </div>
+    <div class="al"><span id="velocity-avg">&mdash;</span></div>
+    <div class="ar">
+      standard deviation
+    </div>
+    <div class="al"><span id="velocity-std-dev">&mdash;</span></div>
+    <div class="ar">
+      greatest deviation
+    </div>
+    <div class="al"><span id="velocity-max-dev">&mdash;</span></div>
+  </div>
+</body>
+<script type="module" src="index.js"></script>
+</html>
